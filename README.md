@@ -10,29 +10,29 @@ The project demonstrates the implementation of several fundamental data structur
 
 ### Book Management
 
-* Add Book
-* Search Book
-* Edit Book
-* Delete Book
-* Display All Books
-* Search by Author
-* Search by Year
-* Search by Genre
+- Add Book
+- Search Book
+- Edit Book
+- Delete Book
+- Display All Books
+- Search by Author
+- Search by Year
+- Search by Genre
 
 ### Member Management
 
-* Add Member
-* Search Member
-* Edit Member
-* Delete Member
-* Display Members
+- Add Member
+- Search Member
+- Edit Member
+- Delete Member
+- Display Members
 
 ### Borrowing System
 
-* Borrow Book
-* Return Book
-* Borrow Queue (FIFO)
-* Borrow History
+- Borrow Book
+- Return Book
+- Borrow Queue (FIFO)
+- Borrow History
 
 ---
 
@@ -64,7 +64,7 @@ Digital-Library/
 
 ## Requirements
 
-* Python 3.10 or newer
+- Python 3.10 or newer
 
 ---
 
@@ -73,7 +73,7 @@ Digital-Library/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Digital-Library.git
+git clone https://github.com/Malingpeak/Perpustakaan_digital.git
 ```
 
 Move into the project folder
