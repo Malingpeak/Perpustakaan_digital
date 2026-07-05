@@ -50,8 +50,16 @@ class LibrarySystem:
         return self.books.edit(judul, pengarang, tahun, genre, stok)
 
     def delete_book(self, judul):
-        self.books.delete(judul)
-        print("Buku berhasil di hapus.")
+        if not self.books.search(judul):
+            print("Buku tidak ada.")
+            return
+        print("Buku Ada.")
+        text = input("Konfirmasi Penghapusan Buku (Y/N): ").strip().lower()
+        if text in ("y", "yes"):
+            self.books.delete(judul)
+            print("Buku Berhasil di Hapus")
+        else:
+            print("Buku Batal Di Hapus")
 
     def display_books(self):
         self.books.display()
@@ -75,9 +83,21 @@ class LibrarySystem:
         if self.members.search(member_id):
             return self.members.edit(member_id, new_name)
 
+    # def delete_member(self, member_id):
+    #     self.members.delete(member_id)
+    #     print("Member berhasil di hapus.")
+
     def delete_member(self, member_id):
-        self.members.delete(member_id)
-        print("Member berhasil di hapus.")
+        if not self.members.search(member_id):
+            print("Member tidak ditemukan.")
+            return
+        print("Member ditemukan")
+        text = input("Konfirmasi Penghapusan Member (Y/N): ").strip().lower()
+        if text in ("y", "yes"):
+            self.members.delete(member_id)
+            print("Member Berhasil di Hapus")
+        else:
+            print("Member Batal Di Hapus")
 
     def display_members(self):
         self.members.display()
